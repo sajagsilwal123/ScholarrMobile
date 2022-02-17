@@ -12,12 +12,12 @@ class Body extends StatelessWidget {
       child: Stack(
         alignment: Alignment.center,
         children: <Widget>[
-          Positioned(
-              top: 0,
-              left: 0,
-              child: Image.network('https://image.shutterstock.com/image-vector/cute-kid-teen-boy-show-260nw-1509139481.jpg',
-              width: size.width* 0.3,)
-          )
+          // Positioned(
+          //     top: 0,
+          //     left: 0,
+          //     child: Image.network('https://image.shutterstock.com/image-vector/cute-kid-teen-boy-show-260nw-1509139481.jpg',
+          //     width: size.width* 0.3,)
+          // )
         ],
       ),
     );
