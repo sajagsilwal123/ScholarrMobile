@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:scholarrfrontend/login.dart';
+import 'package:scholarrfrontend/components/login.dart';
 
 class Body extends StatelessWidget {
 
