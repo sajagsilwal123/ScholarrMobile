@@ -35,44 +35,46 @@ class _LoginState extends State<Login> {
               ],
             )
           ),
-          SizedBox(height: 70,),
+          const SizedBox(height: 70,),
           Container(
             width: 350,
             child: TextFormField(
               decoration: InputDecoration(
+                  fillColor: Colors.white30,
+                  filled: true,
                 focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(20),
-                      borderSide: BorderSide(color: Colors.grey)
+                      //borderSide: BorderSide(color: Colors.grey)
                     ),
                   enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(20),
-                      borderSide: BorderSide(color: Colors.grey)
+                      //borderSide: BorderSide(color: Colors.grey)
                   ),
                 labelText: 'USERNAME',
-                labelStyle: TextStyle(
+                labelStyle: const TextStyle(
                   color: Colors.white70,
                   fontWeight: FontWeight.bold,
                 ),
-                prefixIcon: Icon(Icons.email_rounded, color: Colors.white70,)
+                prefixIcon: const Icon(Icons.email_rounded, color: Colors.white70,)
               ),
-              style: TextStyle(color: Colors.white70),
+              style: const TextStyle(color: Colors.white70),
             ),
           ),
-          SizedBox(height: 30,),
+          const SizedBox(height: 30,),
           Container(
             width: 350,
             child: TextFormField(
               decoration: InputDecoration(
+                fillColor: Colors.white30,
+                filled: true,
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(20),
-                  borderSide: BorderSide(color: Colors.grey),
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(20),
-                  borderSide: BorderSide(color: Colors.grey)
                 ),
                 labelText: 'PASSWORD',
-                labelStyle: TextStyle(
+                labelStyle: const TextStyle(
                   color:Colors.white70,
                   fontWeight: FontWeight.bold,
                 ),
@@ -82,12 +84,12 @@ class _LoginState extends State<Login> {
               obscureText: true,
             ),
           ),
-          SizedBox(height: 10,),
+          const SizedBox(height: 10,),
           Container(
             alignment: Alignment(1.0, 0.0),
             padding: EdgeInsets.only(top: 15, left: 10, right: 40),
             child: InkWell(
-              child: Text("FORGOT PASSWORD?",
+              child: const Text("FORGOT PASSWORD?",
                 style: TextStyle(
                   color: Colors.white70,
                   fontWeight: FontWeight.bold,
@@ -110,11 +112,9 @@ class _LoginState extends State<Login> {
                   fontSize: 20
                 ),),
                 style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all<Color>(Colors.green),
                   shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20.0),
-                        side: BorderSide(color: Colors.lightGreen),
                       )
                   )
                 ),
@@ -125,7 +125,7 @@ class _LoginState extends State<Login> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children:<Widget>[
-                InkWell(
+                const InkWell(
                   child: Text("Don't have an account?  ",
                   style: TextStyle(
                     color: Colors.white70

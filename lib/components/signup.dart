@@ -37,14 +37,15 @@ class _SignupState extends State<Signup> {
                 width: 145,
                 height: 30,
                 child: TextFormField(
+
                   decoration: InputDecoration(
+                      fillColor: Colors.white30,
+                      filled: true,
                       focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(20),
-                          borderSide: BorderSide(color: Colors.white70)
                       ),
                       enabledBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(20),
-                          borderSide: BorderSide(color: Colors.white70)
                       ),
                       labelText: 'First Name',
                       labelStyle:TextStyle(
@@ -61,13 +62,13 @@ class _SignupState extends State<Signup> {
                 height: 30,
                 child: TextFormField(
                   decoration: InputDecoration(
+                      fillColor: Colors.white30,
+                      filled: true,
                       focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(20),
-                          borderSide: BorderSide(color: Colors.white70)
                       ),
                       enabledBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(20),
-                          borderSide: BorderSide(color: Colors.white70)
                       ),
                       labelText: 'Last Name',
                       labelStyle:TextStyle(
@@ -86,13 +87,13 @@ class _SignupState extends State<Signup> {
             width: 300,
             child: TextFormField(
               decoration: InputDecoration(
+                fillColor: Colors.white30,
+                filled: true,
                 focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(20),
-                    borderSide: BorderSide(color: Colors.white70)
                 ),
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(20),
-                  borderSide: BorderSide(color: Colors.white70)
                 ),
                   labelText: 'Email',
                   labelStyle:TextStyle(
@@ -108,13 +109,13 @@ class _SignupState extends State<Signup> {
             width: 300,
             child: TextFormField(
               decoration: InputDecoration(
+                  fillColor: Colors.white30,
+                  filled: true,
                   focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(20),
-                      borderSide: BorderSide(color: Colors.white70)
                   ),
                   enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(20),
-                      borderSide: BorderSide(color: Colors.white70)
                   ),
                   labelText: 'Password',
                   labelStyle:TextStyle(
@@ -131,13 +132,13 @@ class _SignupState extends State<Signup> {
             width: 300,
             child: TextFormField(
               decoration: InputDecoration(
+                  fillColor: Colors.white30,
+                  filled: true,
                   focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(20),
-                      borderSide: BorderSide(color: Colors.white70)
                   ),
                   enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(20),
-                      borderSide: BorderSide(color: Colors.white70)
                   ),
                   labelText: 'Confirm Password',
                   labelStyle:TextStyle(
@@ -154,17 +155,15 @@ class _SignupState extends State<Signup> {
             width: 250,
             child: ElevatedButton(
               onPressed: (){print("REGISTER BUTTON PRESSED");},
-              child: Text('REGISTER',
+              child: const Text('REGISTER',
                 style: TextStyle(
                     fontSize: 20,
                     color: Colors.white70,
                 ),),
               style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all<Color>(Colors.green),
                   shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20.0),
-                        side: BorderSide(color: Colors.lightGreen),
                       )
                   )
               ),
