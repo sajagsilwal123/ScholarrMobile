@@ -17,7 +17,7 @@ class _SignupState extends State<Signup> {
             children:<Widget>[
               Container(
                 padding: EdgeInsets.fromLTRB(0, 110, 0, 0),
-                child: Center(
+                child: const Center(
                   child: Text("Sign Up",
                     style: TextStyle(
                         color: Colors.white,
@@ -35,7 +35,7 @@ class _SignupState extends State<Signup> {
             children:<Widget>[
               Container(
                 width: 145,
-                height: 30,
+                height: 40,
                 child: TextFormField(
 
                   decoration: InputDecoration(
@@ -48,7 +48,7 @@ class _SignupState extends State<Signup> {
                           borderRadius: BorderRadius.circular(20),
                       ),
                       labelText: 'First Name',
-                      labelStyle:TextStyle(
+                      labelStyle:const TextStyle(
                           color:Colors.white70
                       )
                   ),
@@ -59,7 +59,7 @@ class _SignupState extends State<Signup> {
               SizedBox(width: 10,),
               Container(
                 width: 145,
-                height: 30,
+                height: 40,
                 child: TextFormField(
                   decoration: InputDecoration(
                       fillColor: Colors.white30,
@@ -71,11 +71,11 @@ class _SignupState extends State<Signup> {
                           borderRadius: BorderRadius.circular(20),
                       ),
                       labelText: 'Last Name',
-                      labelStyle:TextStyle(
+                      labelStyle:const TextStyle(
                         color:Colors.white70,
                       )
                   ),
-                  style: TextStyle(color: Colors.white70),
+                  style: const TextStyle(color: Colors.white70),
                   textAlign: TextAlign.center,
                 ),
               ),
@@ -83,7 +83,7 @@ class _SignupState extends State<Signup> {
           ),
           SizedBox(height: 30,),
           Container(
-            height: 35,
+            height: 40,
             width: 300,
             child: TextFormField(
               decoration: InputDecoration(
@@ -96,16 +96,16 @@ class _SignupState extends State<Signup> {
                   borderRadius: BorderRadius.circular(20),
                 ),
                   labelText: 'Email',
-                  labelStyle:TextStyle(
+                  labelStyle:const TextStyle(
                     color:Colors.white70
                   )
               ),
-              style: TextStyle(color: Colors.white70,),
+              style: const TextStyle(color: Colors.white70,),
             ),
           ),
           SizedBox(height: 30,),
           Container(
-            height: 35,
+            height: 40,
             width: 300,
             child: TextFormField(
               decoration: InputDecoration(
@@ -118,7 +118,7 @@ class _SignupState extends State<Signup> {
                       borderRadius: BorderRadius.circular(20),
                   ),
                   labelText: 'Password',
-                  labelStyle:TextStyle(
+                  labelStyle:const TextStyle(
                     color:Colors.white70,
                   )
               ),
@@ -128,7 +128,7 @@ class _SignupState extends State<Signup> {
           ),
           SizedBox(height: 30,),
           Container(
-            height: 35,
+            height: 40,
             width: 300,
             child: TextFormField(
               decoration: InputDecoration(
@@ -141,11 +141,11 @@ class _SignupState extends State<Signup> {
                       borderRadius: BorderRadius.circular(20),
                   ),
                   labelText: 'Confirm Password',
-                  labelStyle:TextStyle(
+                  labelStyle:const TextStyle(
                     color:Colors.white70,
                   )
               ),
-              style: TextStyle(color: Colors.white70),
+              style: const TextStyle(color: Colors.white70),
               obscureText: true,
             ),
           ),
@@ -174,13 +174,13 @@ class _SignupState extends State<Signup> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Text('Already have an account?   ',
+                const Text('Already have an account?   ',
                   style: TextStyle(
                     color: Colors.white70
                   ),
                 ),
                 InkWell(
-                  child: Text('Login Here',
+                  child: const Text('Login Here',
                   style: TextStyle(
                     color: Colors.white70,
                     fontWeight: FontWeight.bold,
