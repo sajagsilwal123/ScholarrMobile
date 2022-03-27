@@ -5,7 +5,7 @@ import 'components/body.dart';
 import 'components/login.dart';
 import 'components/landingpage.dart';
 
-void mani(){
+void main(){
   runApp(
     MyApp(),
   );
