@@ -14,72 +14,72 @@ class _SignupState extends State<Signup> {
       body: Column(
         children: <Widget>[
           Stack(
-            children:<Widget>[
-              Container(
-                padding: EdgeInsets.fromLTRB(0, 110, 0, 0),
-                child: const Center(
-                  child: Text("Sign Up",
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 50
+              children:<Widget>[
+                Container(
+                  padding: EdgeInsets.fromLTRB(0, 110, 0, 0),
+                  child: const Center(
+                    child: Text("Sign Up",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 50
+                      ),
                     ),
                   ),
                 ),
-              ),
-            ]
+              ]
           ),
           SizedBox(height: 60,),
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children:<Widget>[
-              Container(
-                width: 145,
-                height: 40,
-                child: TextFormField(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children:<Widget>[
+                Container(
+                  width: 145,
+                  height: 40,
+                  child: TextFormField(
 
-                  decoration: InputDecoration(
-                      fillColor: Colors.white30,
-                      filled: true,
-                      focusedBorder: OutlineInputBorder(
+                    decoration: InputDecoration(
+                        fillColor: Colors.white30,
+                        filled: true,
+                        focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(20),
-                      ),
-                      enabledBorder: OutlineInputBorder(
+                        ),
+                        enabledBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(20),
-                      ),
-                      labelText: 'First Name',
-                      labelStyle:const TextStyle(
-                          color:Colors.white70
-                      )
+                        ),
+                        labelText: 'First Name',
+                        labelStyle:const TextStyle(
+                            color:Colors.white70
+                        )
+                    ),
+                    style: TextStyle(color: Colors.white70),
+                    textAlign: TextAlign.center,
                   ),
-                  style: TextStyle(color: Colors.white70),
-                  textAlign: TextAlign.center,
                 ),
-              ),
-              SizedBox(width: 10,),
-              Container(
-                width: 145,
-                height: 40,
-                child: TextFormField(
-                  decoration: InputDecoration(
-                      fillColor: Colors.white30,
-                      filled: true,
-                      focusedBorder: OutlineInputBorder(
+                SizedBox(width: 10,),
+                Container(
+                  width: 145,
+                  height: 40,
+                  child: TextFormField(
+                    decoration: InputDecoration(
+                        fillColor: Colors.white30,
+                        filled: true,
+                        focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(20),
-                      ),
-                      enabledBorder: OutlineInputBorder(
+                        ),
+                        enabledBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(20),
-                      ),
-                      labelText: 'Last Name',
-                      labelStyle:const TextStyle(
-                        color:Colors.white70,
-                      )
+                        ),
+                        labelText: 'Last Name',
+                        labelStyle:const TextStyle(
+                          color:Colors.white70,
+                        )
+                    ),
+                    style: const TextStyle(color: Colors.white70),
+                    textAlign: TextAlign.center,
                   ),
-                  style: const TextStyle(color: Colors.white70),
-                  textAlign: TextAlign.center,
                 ),
-              ),
-            ]
+              ]
           ),
           SizedBox(height: 30,),
           Container(
@@ -87,17 +87,17 @@ class _SignupState extends State<Signup> {
             width: 300,
             child: TextFormField(
               decoration: InputDecoration(
-                fillColor: Colors.white30,
-                filled: true,
-                focusedBorder: OutlineInputBorder(
+                  fillColor: Colors.white30,
+                  filled: true,
+                  focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(20),
-                ),
-                enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(20),
-                ),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
                   labelText: 'Email',
                   labelStyle:const TextStyle(
-                    color:Colors.white70
+                      color:Colors.white70
                   )
               ),
               style: const TextStyle(color: Colors.white70,),
@@ -112,10 +112,10 @@ class _SignupState extends State<Signup> {
                   fillColor: Colors.white30,
                   filled: true,
                   focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(20),
+                    borderRadius: BorderRadius.circular(20),
                   ),
                   enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(20),
+                    borderRadius: BorderRadius.circular(20),
                   ),
                   labelText: 'Password',
                   labelStyle:const TextStyle(
@@ -135,10 +135,10 @@ class _SignupState extends State<Signup> {
                   fillColor: Colors.white30,
                   filled: true,
                   focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(20),
+                    borderRadius: BorderRadius.circular(20),
                   ),
                   enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(20),
+                    borderRadius: BorderRadius.circular(20),
                   ),
                   labelText: 'Confirm Password',
                   labelStyle:const TextStyle(
@@ -157,8 +157,8 @@ class _SignupState extends State<Signup> {
               onPressed: (){print("REGISTER BUTTON PRESSED");},
               child: const Text('REGISTER',
                 style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.white70,
+                  fontSize: 20,
+                  color: Colors.white70,
                 ),),
               style: ButtonStyle(
                   shape: MaterialStateProperty.all<RoundedRectangleBorder>(
@@ -176,18 +176,18 @@ class _SignupState extends State<Signup> {
               children: <Widget>[
                 const Text('Already have an account?   ',
                   style: TextStyle(
-                    color: Colors.white70
+                      color: Colors.white70
                   ),
                 ),
                 InkWell(
                   child: const Text('Login Here',
-                  style: TextStyle(
-                    color: Colors.white70,
-                    fontWeight: FontWeight.bold,
-                    decoration: TextDecoration.underline,
-                    decorationColor: Colors.white70,
-                    fontSize: 15
-                  ),
+                    style: TextStyle(
+                        color: Colors.white70,
+                        fontWeight: FontWeight.bold,
+                        decoration: TextDecoration.underline,
+                        decorationColor: Colors.white70,
+                        fontSize: 15
+                    ),
                   ),
                   onTap: (){print('Login Button (INKWELL) Pressed');},
                 )

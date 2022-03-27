@@ -17,23 +17,23 @@ class _LoginState extends State<Login> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           Container(
-            child: Stack(
-              children: <Widget>[
-                Container(
-                  child: Center(
-                    child:Text(
-                      'LOGIN',
-                      style: TextStyle(
-                          fontSize: 50,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.grey[500]
+              child: Stack(
+                children: <Widget>[
+                  Container(
+                    child: Center(
+                      child:Text(
+                        'LOGIN',
+                        style: TextStyle(
+                            fontSize: 50,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.grey[500]
+                        ),
                       ),
                     ),
-                    ),
-                  padding: EdgeInsets.fromLTRB(15.0, 110.0, 0.0, 0.0),
-                ),
-              ],
-            )
+                    padding: EdgeInsets.fromLTRB(15.0, 110.0, 0.0, 0.0),
+                  ),
+                ],
+              )
           ),
           const SizedBox(height: 70,),
           Container(
@@ -42,20 +42,20 @@ class _LoginState extends State<Login> {
               decoration: InputDecoration(
                   fillColor: Colors.white30,
                   filled: true,
-                focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(20),
-                      //borderSide: BorderSide(color: Colors.grey)
-                    ),
-                  enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(20),
-                      //borderSide: BorderSide(color: Colors.grey)
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(20),
+                    //borderSide: BorderSide(color: Colors.grey)
                   ),
-                labelText: 'USERNAME',
-                labelStyle: const TextStyle(
-                  color: Colors.white70,
-                  fontWeight: FontWeight.bold,
-                ),
-                prefixIcon: const Icon(Icons.email_rounded, color: Colors.white70,)
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(20),
+                    //borderSide: BorderSide(color: Colors.grey)
+                  ),
+                  labelText: 'USERNAME',
+                  labelStyle: const TextStyle(
+                    color: Colors.white70,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  prefixIcon: const Icon(Icons.email_rounded, color: Colors.white70,)
               ),
               style: const TextStyle(color: Colors.white70),
             ),
@@ -86,38 +86,38 @@ class _LoginState extends State<Login> {
           ),
           const SizedBox(height: 10,),
           Container(
-            alignment: Alignment(1.0, 0.0),
-            padding: EdgeInsets.only(top: 15, left: 10, right: 40),
-            child: InkWell(
-              child: const Text("FORGOT PASSWORD?",
-                style: TextStyle(
-                  color: Colors.white70,
-                  fontWeight: FontWeight.bold,
-                  decoration: TextDecoration.underline,
-                  decorationColor: Colors.white70,
-                  decorationThickness: 2
+              alignment: Alignment(1.0, 0.0),
+              padding: EdgeInsets.only(top: 15, left: 10, right: 40),
+              child: InkWell(
+                child: const Text("FORGOT PASSWORD?",
+                  style: TextStyle(
+                      color: Colors.white70,
+                      fontWeight: FontWeight.bold,
+                      decoration: TextDecoration.underline,
+                      decorationColor: Colors.white70,
+                      decorationThickness: 2
+                  ),
                 ),
-              ),
-              onTap: (){print('FORGOT PASSWORD PRESSED');},
-            )
+                onTap: (){print('FORGOT PASSWORD PRESSED');},
+              )
           ),
           SizedBox(height: 70,),
           Container(
             height: 45,
             width: 300,
             child: ElevatedButton(
-                onPressed: (){print("LOGIN BUTTON PRESSED");},
-                child: Text('LOGIN',
+              onPressed: (){print("LOGIN BUTTON PRESSED");},
+              child: Text('LOGIN',
                 style: TextStyle(
-                  fontSize: 20
+                    fontSize: 20
                 ),),
-                style: ButtonStyle(
+              style: ButtonStyle(
                   shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20.0),
                       )
                   )
-                ),
+              ),
             ),
           ),
           SizedBox(height: 30,),
@@ -127,20 +127,20 @@ class _LoginState extends State<Login> {
               children:<Widget>[
                 const InkWell(
                   child: Text("Don't have an account?  ",
-                  style: TextStyle(
-                    color: Colors.white70
+                    style: TextStyle(
+                        color: Colors.white70
                     ),
                   ),
                 ),
                 InkWell(
                   child: Text('Sign Up',
                     style: TextStyle(
-                      color: Colors.white70,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 17,
-                      decoration: TextDecoration.underline,
-                      decorationThickness: 2,
-                      decorationColor: Colors.white70
+                        color: Colors.white70,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 17,
+                        decoration: TextDecoration.underline,
+                        decorationThickness: 2,
+                        decorationColor: Colors.white70
                     ),
                   ),
                   onTap: (){print('SIGNUP Button Pressed');},
