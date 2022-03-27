@@ -5,21 +5,19 @@ class Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var test = MediaQuery.of(context).platformBrightness == Brightness.dark
+    ? 'DarkTheme'
+    : 'LightTheme';
     Size size = MediaQuery.of(context).size;
     print('THE HEIGHT OF THE SCREEN IS : ${size.height}');
-    return Container(
-      height: size.height,
-      width: size.width,
-      child: Stack(
-        alignment: Alignment.center,
-        children: <Widget>[
-          // Positioned(
-          //     top: 0,
-          //     left: 0,
-          //     child: Image.network('https://image.shutterstock.com/image-vector/cute-kid-teen-boy-show-260nw-1509139481.jpg',
-          //     width: size.width* 0.3,)
-          // )
-        ],
+    print(test);
+    return Scaffold(
+      body:Container(
+        child: Text('Hello $test',
+        style: TextStyle(
+          fontSize: 40,
+          color: Colors.orange,
+        ),),
       ),
     );
   }
