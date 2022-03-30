@@ -7,6 +7,7 @@ import 'components/login.dart';
 import 'components/landingpage.dart';
 import 'theme/theme.dart';
 import 'package:provider/provider.dart';
+import 'package:scholarr/planner/tplanner.dart';
 
 void main(){
   runApp(
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         themeMode: themeProvider.themeMode,
         theme: MyThemes.lightTheme,
         darkTheme: MyThemes.darkTheme,
-        home: LandingPage(),
+        home: TPlanner(),
       );
     },
   );

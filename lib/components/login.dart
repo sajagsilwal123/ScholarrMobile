@@ -133,7 +133,7 @@ class _LoginState extends State<Login> {
                   ),
                 ),
                 InkWell(
-                  child: Text('Sign Up',
+                  child: const Text('Sign Up',
                     style: TextStyle(
                         color: Colors.white70,
                         fontWeight: FontWeight.bold,
