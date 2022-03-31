@@ -37,14 +37,17 @@ class _TPlannerState extends State<TPlanner> {
                   ),
                 ),
                 Expanded(
-                  child: ListView(
-                    children: [
-                      TaskCard(title: "Get Started",desc: "Hello Its mee",),
-                      TaskCard(),
-                      TaskCard(),
-                      TaskCard(),
-                      TaskCard()
-                    ],
+                  child: ScrollConfiguration(
+                    behavior: NoGlowBehaviour(),
+                    child: ListView(
+                      children: [
+                        TaskCard(title: "Get Started",desc: "Hello Its mee",),
+                        TaskCard(),
+                        TaskCard(),
+                        TaskCard(),
+                        TaskCard()
+                      ],
+                    ),
                   ),
                 ),
                 ],
@@ -59,6 +62,7 @@ class _TPlannerState extends State<TPlanner> {
                       builder: (context)=>TaskPage()
                     )
                   );
+                  print('Go to PRESSED');
                 },
                 child: Container(
                   decoration: BoxDecoration(
@@ -66,7 +70,7 @@ class _TPlannerState extends State<TPlanner> {
                     borderRadius: BorderRadius.circular(20),
 
                   ),
-                    child: Image(
+                    child: const Image(
                       image: AssetImage('assets/images/add.png'),
                       height: 40,
                     )
