@@ -1,4 +1,3 @@
-import 'package:flutter/animation.dart';
 import 'package:flutter/material.dart';
 import 'package:scholarr/planner/tplanner.dart';
 import 'package:scholarr/planner/taskCard.dart';
@@ -49,9 +48,10 @@ class _TaskPageState extends State<TaskPage> {
                               ),
                             ),
                           ),
-                          const Expanded(
+                          Expanded(
                             child: TextField(
-                              decoration: InputDecoration(
+                              onSubmitted: (value){print('The value is : $value');},
+                              decoration: const InputDecoration(
                                   hintText: "Enter Task Title",
                                   border: InputBorder.none
                               ),
@@ -64,12 +64,12 @@ class _TaskPageState extends State<TaskPage> {
                         ],
                       ),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.only(
+                  Padding(
+                    padding: const EdgeInsets.only(
                       bottom: 6.0,
                     ),
                     child: TextField(
-                      decoration: InputDecoration(
+                      decoration: const InputDecoration(
                         hintText: "Enter Description for the task",
                         border: InputBorder.none,
                         contentPadding: EdgeInsets.symmetric(
