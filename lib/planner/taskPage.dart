@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:scholarr/planner/tplanner.dart';
-import 'package:scholarr/planner/taskCard.dart';
+import 'package:scholarr/planner/widgets.dart';
 
 class TaskPage extends StatefulWidget {
   const TaskPage({Key? key}) : super(key: key);

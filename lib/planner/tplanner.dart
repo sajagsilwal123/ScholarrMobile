@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:scholarr/planner/taskPage.dart';
 import 'package:scholarr/theme/theme.dart';
 import 'package:provider/provider.dart';
-import 'package:scholarr/planner/taskCard.dart';
+import 'package:scholarr/planner/widgets.dart';
 
 class TPlanner extends StatefulWidget {
   const TPlanner({Key? key}) : super(key: key);
