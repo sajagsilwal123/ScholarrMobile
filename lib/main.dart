@@ -11,7 +11,7 @@ import 'package:scholarr/planner/tplanner.dart';
 
 void main(){
   runApp(
-    const MyApp(),
+     MyApp(),
   );
 }
 
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
       return MaterialApp(
         title: 'Scholarr Mobile App',
         themeMode: themeProvider.themeMode,
-        theme: MyThemes.lightTheme,
+        theme: MyThemes.darkTheme,
         darkTheme: MyThemes.darkTheme,
         home: TPlanner(),
       );

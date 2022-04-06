@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:jiffy/jiffy.dart';
+
+String month = Jiffy(DateTime.now()).format('MMMM yyyy');
 
 class TaskCard extends StatelessWidget {
   // const TaskCard({Key? key}) : super(key: key);
   final String title;
   final String desc;
   TaskCard({this.title='(NO TITLE ADDED)', this.desc='No decription Added'});
-
 
   @override
   Widget build(BuildContext context) {
@@ -16,8 +18,8 @@ class TaskCard extends StatelessWidget {
         horizontal: 24,
       ),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20),
-        color: Colors.grey.shade200,
+        borderRadius: BorderRadius.circular(9),
+        color: Colors.grey.shade800,
       ),
       margin: const EdgeInsets.only(
         bottom: 20
@@ -28,7 +30,7 @@ class TaskCard extends StatelessWidget {
           Text(
             title,
             style: const TextStyle(
-              color: Colors.black,
+              color: Colors.white,
               fontWeight: FontWeight.bold,
               fontSize: 20
             ),
@@ -84,7 +86,7 @@ class ToDoList extends StatelessWidget {
              Text(
                text,
             style: TextStyle(
-              color: isDone? Colors.black : Colors.black54,
+              color: isDone? Colors.grey.shade400 : Colors.grey.shade300,
               fontSize: 16,
               fontWeight: isDone? FontWeight.bold : FontWeight.w700
             ),

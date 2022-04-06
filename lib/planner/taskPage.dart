@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:scholarr/models/task.dart';
 import 'package:scholarr/planner/tplanner.dart';
 import 'package:scholarr/planner/widgets.dart';
+import 'package:scholarr/models/database_helper.dart';
+import 'package:sqflite/sqflite.dart';
 
 class TaskPage extends StatefulWidget {
   const TaskPage({Key? key}) : super(key: key);
@@ -44,18 +47,29 @@ class _TaskPageState extends State<TaskPage> {
                               ),
                               child: Image(
                                 image: AssetImage('assets/images/backArrow.png'),
+                                color: Colors.grey,
                                 height: 24,
                               ),
                             ),
                           ),
                           Expanded(
                             child: TextField(
-                              onSubmitted: (value){print('The value is : $value');},
+                              onSubmitted: (value) async{
+                                DatabaseHelper _dbHelper = DatabaseHelper();
+                                if(value == ""){
+                                  DatabaseHelper _dbHelper = DatabaseHelper();
+                                    Task _newTask = Task(
+                                    title: value
+                                  );
+                                  await   _dbHelper.insertTask(_newTask);
+                                }
+                                print('New Task Created');
+                                },
                               decoration: const InputDecoration(
                                   hintText: "Enter Task Title",
                                   border: InputBorder.none
                               ),
-                              style: TextStyle(
+                              style: const TextStyle(
                                   fontSize: 26,
                                   fontWeight: FontWeight.bold
                               ),
@@ -64,12 +78,12 @@ class _TaskPageState extends State<TaskPage> {
                         ],
                       ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(
+                  const Padding(
+                    padding: EdgeInsets.only(
                       bottom: 6.0,
                     ),
                     child: TextField(
-                      decoration: const InputDecoration(
+                      decoration: InputDecoration(
                         hintText: "Enter Description for the task",
                         border: InputBorder.none,
                         contentPadding: EdgeInsets.symmetric(
@@ -80,7 +94,7 @@ class _TaskPageState extends State<TaskPage> {
                   ),
                   ToDoList(text: 'HCI Lab Sheet', isDone: false),
                   ToDoList(isDone:true),
-                  ToDoList(isDone: false,),
+                  ToDoList(isDone: true,),
                   ToDoList(isDone: false),
                 ],
               ),
